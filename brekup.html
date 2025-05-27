@@ -1,0 +1,68 @@
+<!-- This is a Brekup Sattelment Calculator made by praveen singh  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brekup Sattelment Calculator</title>
+    <link rel="stylesheet" href="brekup.css">
+</head>
+<body>
+    <form action="" onsubmit="return check()">
+
+        <div id = "container2">
+            <h2>♥️ Brekup Settlement Calculator ♥️ </h2>
+            <label for = ""> Relationship Duration (Months) ⌚</label>
+            <input type = "number" id="duration"> 
+            <label for = ""> Kitne Paise Laga Chuke 💸</label>
+            <input type = "number" id="money-spent"> 
+            <label for = ""> Brekup Reason 😞</label> 
+            <select  id = "reason">
+                <option value = ""  > Select </option>
+                <option value = "cheating"> Cheating 😖</option>
+                <option value = "long-distance"> Long Distance 😞</option>
+                <option value = "shadi-pressure"> Shadi Pressure 💍</option>
+                <option value = "third-person"> Third Person 😡</option>
+                <option value = "lambi-ladai"> Lambi Ladai 😰</option>
+                <option value = "koi or mil gya"> Koi or Mil Gya 😭</option>
+            </select>
+            <label for = "">Gift Exchange 🎁</label>
+            <input type = "number" id="gift"> 
+            <label for = ""> Block/Unblock Status 📲</label> 
+            <select  id = "status">
+                <option value = ""> Select </option>
+                <option value = "block"> Blocked </option>
+                <option value = "unblock"> Unblocked </option>
+                <option value = "on/off"> On/Off</option>
+            </select>
+            <button type = "submit">Calculate ♥️</button>
+        </div>
+        <div id="calculation"></div>
+    </form>
+
+        <!-- This section is javascript code -->
+         <script>
+            function check()
+            {
+                var a = document.getElementById("duration").value;
+                var b = document.getElementById("money-spent").value;
+                var c = document.getElementById("reason").value;
+                var d = document.getElementById("gift").value;
+                var e = document.getElementById("status").value;
+                if(a==""|| b==""|| c==""|| d=="" || e=="")
+                    {
+                        alert("Please fill all fields");
+                        return false;
+                    }else if(a<1||b<1||d<1)
+                    {
+                        alert("Please enter valid value")
+                        return false;
+                    }else
+                    {
+                        true;
+                    }
+                    alert(document.getElementById("calculation").innerText="Therapy lo");            
+                }
+         </script>
+</body>
+</html>

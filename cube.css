@@ -1,0 +1,75 @@
+ body{
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        #container{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        #box-area{
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotate3d(1,1,0,70deg);
+            animation: ghumana 3s linear infinite;
+        }
+        @keyframes ghumana {
+            0%{
+                transform:rotate3d(1,1,0,0);
+            }
+            100%{
+                transform:rotate3d(1,1,1,360deg);
+            }
+        }
+        .box{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        #box-front{
+            background-color: red;
+            transform: translate3d(-100px,-100px,100px);
+        }
+        #box-back{
+            background-color: rgb(9, 255, 0);
+            transform: translate3d(-100px,-100px,-100px);
+        }
+        #box-right{
+            background-color: rgb(14, 38, 223);
+            transform: translateY(-100px)rotateY(90deg);
+        }
+        #box-left{
+            background-color: rgb(255, 255, 0);
+            transform: translate3d(-200px,-100px,-0px)rotateY(90deg);
+        }
+        #box-top{
+            background-color: rgb(255, 102, 0);
+            transform: translate3d(-100px,-200px,-0px)rotateX(90deg);
+        }
+        #box-bottom{
+            background-color: rgb(255, 255, 255);
+            transform: translateX(-100px)rotateX(90deg);
+        }
+        .grid-container-bg-front{
+            display: grid;
+            height: 100%;
+            grid-template-areas: '1 1 1';
+            grid-gap: 0;
+            padding: 0;
+        }
+        .grid-container-bg-front>div{
+            border: 3px solid rgb(12, 0, 0);
+            border-radius: 8%;
+        }
+        #box-area:hover{
+            animation: round 2s linear infinite;
+        }
+        @keyframes round {
+            0%{
+                transform:rotate3d(1,1,0,0);
+            }
+            100%{
+                transform:rotate3d(1,1,1,360deg);
+            }
+        }
+        

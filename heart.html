@@ -1,0 +1,48 @@
+<!-- This is a Heart made by praveen singh  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+        }
+
+        #dil {
+            height: 100px;
+            width: 100px;
+            background-color: #ff002b;
+            position: relative;
+            rotate: 45deg;
+        }
+        #dil::before{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #ff002b;
+            position: absolute;
+            border-radius: 50%;
+            transform: translate(-50%,0%);
+        }
+        #dil::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #ff002b;
+            position: absolute;
+            border-radius: 50%;
+            transform: translate(0%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dil"></div>
+</body>
+
+</html>

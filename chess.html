@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-Board Maze</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #161e2e;
+        }
+
+        .chessBoard {
+            background-color: rgb(136, 59, 28);
+            display: grid;
+            border: 25px solid rgb(136, 59, 28);
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+        }
+
+        .white {
+            background-color: rgb(255, 221, 159);
+            width: 60px;
+            height: 60px;
+            /* border: 2px solid white; */
+            border-radius: 15%;
+            box-sizing: border-box;
+        }
+
+        .black {
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            /* border: 2px solid black; */
+            border-radius: 15%;
+            box-sizing: border-box;
+        }
+
+        .white:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px blue;
+        }
+
+        .black:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px blue;
+        }
+        .box{
+            background-color: rgb(136, 59, 28);
+            border: 10px solid red;
+        }
+        p{
+            text-align: center;
+            font-family: cambria;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>praveen singh</p>
+
+        <div class="chessBoard">
+            <!-- first row -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- second row -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!-- third row -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- forth row -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!-- five row -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- six row -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!-- seven row -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- eight row -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
